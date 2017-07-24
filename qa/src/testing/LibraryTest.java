@@ -6,10 +6,11 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
-import qa.Book;
-import qa.Diss;
-import qa.Items;
-import qa.MusPas;
+import qa.LibraryProject.Book;
+import qa.LibraryProject.Diss;
+import qa.LibraryProject.Items;
+import qa.LibraryProject.LibCus;
+import qa.LibraryProject.MusPas;
 
 public class LibraryTest {
 	ArrayList<Items> I = new ArrayList<Items>();// create initial library collection
@@ -17,15 +18,16 @@ public class LibraryTest {
 	Book b2= new Book(40.50f, true, 21, "My Life", 2015,"Celeb Man", true,false,  true);
 	Diss d = new Diss(5.99f, true, 55, "Greenhouse climate and control system ", 2017,"David Jiang", "Alex","Sheffield Hallam");
 	MusPas m = new MusPas(19.99f, false, 1, "Museum of Cool Stuff", true);
+	LibCus c = new LibCus("Bob", "Smith ", "M10 5FD");
+	LibCus c2 = new LibCus("Sally", "West ", "N14 4ET");
 	
 
 	@Test
 	public void test1() { //tests adding an item to the Library
 		b.addItem(I,b); //add book 										// want in this format: b.addItem(I);
 		assertEquals(1, I.size());
-		Book  w = (Book) I.get(0); // retrieve book
-		assertEquals(b.getAuthor(), w.getAuthor()); //compare attribute
-
+		Items  w = (Items) I.get(0); // retrieve book
+		assertEquals(b.getID(), w.getID()); //compare attribute
 		
 	}
 	
@@ -40,8 +42,7 @@ public class LibraryTest {
 	public void test3()	{ //tests method for retrieving the index of the item;
 		b.addItem(I, b);  
 		b.addItem(I, b2);
-		b.addItem(I, d);
-		
+		b.addItem(I, d);	
 		
 		
 		assertEquals(0,b.getIndex(I)); // check index of third item, should be 2
@@ -60,5 +61,7 @@ public class LibraryTest {
 		assertEquals(x, m.getIndex(I));// check if  m is at the previous index of b
 		
 	}
+	
+	
 
 }
