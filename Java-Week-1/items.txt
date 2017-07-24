@@ -1,0 +1,33 @@
+Item: Museum Pass
+Museum: Museum of Cool Stuff
+Price: £19.99
+Reserved: false
+Booking Duration: 1 days
+
+Item: Dissertation
+Name: Greenhouse climate and control system 
+Author: David Jiang
+Contributor: Alex
+University Sheffield Hallam
+Price: £5.99
+Reserved: true
+Booking Duration: 55 days
+
+Item: Book
+Name: My Life
+Author: Celeb Man
+Price: £40.5
+Reserved: true
+Fiction: false
+Ebook: true
+Audio Book: true
+Booking Duration: 21 days
+
+Item: Government Document
+Name: Secret Stuff
+Author: Agent Man
+Price: £10.4
+Reserved: true
+Booking Duration: 150 days
+Restricted: true
+
