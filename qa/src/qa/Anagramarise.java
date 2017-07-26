@@ -17,7 +17,7 @@ public class Anagramarise {
 	
 	
 
-	public Anagramarise(HashMap<String, ArrayList<String>> h, ArrayList<String> k, int max, int ws,
+	public Anagramarise(HashMap<String, ArrayList<String>> h, ArrayList<String> k, int max, int ws, 
 			ArrayList<String> w) {
 		super();
 		H = h;
@@ -28,7 +28,7 @@ public class Anagramarise {
 	}
 
 
-	public HashMap<String, ArrayList<String>> ana(ArrayList<String> A){  // sorts words that contain the same letters  
+	public HashMap<String, ArrayList<String>> ana(ArrayList<String> A){  /** sorts words that contain the same letters  **/
 		
 		for (int i=0;i<A.size();i++) {
 			String x = A.get(i);
@@ -54,9 +54,7 @@ public class Anagramarise {
 		
 		while (it.hasNext()) {
 			Entry<String, ArrayList<String>> entry = it.next();
-			//System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue());
-			//System.out.println(entry.getValue().size());
-			//System.out.println("");
+			
 			
 			if (entry.getValue().size()>max) {
 				max = entry.getValue().size(); //changes max value to the new max value

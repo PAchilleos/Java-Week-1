@@ -4,11 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map.Entry;
 import java.util.Scanner;
 
-public interface Anagrams {
+public class Anagrams {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -32,6 +30,7 @@ public interface Anagrams {
 					if (!si[i].equals(""))
 						w.add(si[i]);
 					
+					
 				}
 				
 				
@@ -42,9 +41,6 @@ public interface Anagrams {
 			e.printStackTrace();
 		}
 		
-		for (int i=0; i<w.size();i++) {
-			
-		}
 		
 		H.ana(w);  
 		int x =H.findkey(map); // finds the amount of anagrams for each entry in the hashmap 

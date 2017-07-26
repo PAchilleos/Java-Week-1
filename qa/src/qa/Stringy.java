@@ -16,8 +16,8 @@ public class Stringy {
 		S.sor(map2,b);
 		
 		
-		System.out.println(map1.get('l'));
-		System.out.println(map2.get('e'));
+		System.out.println(map1);
+		System.out.println(map2);
 		
 		
 	}

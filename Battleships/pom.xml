@@ -3,26 +3,28 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>JavaSE</groupId>
-  <artifactId>Library</artifactId>
+  <artifactId>Battleships</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>Library</name>
+  <name>Battleships</name>
   <url>http://maven.apache.org</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
-  <dependencies>   
-    
-<dependency>
+  <dependencies>
+    <dependency>
     <groupId>junit</groupId>
     <artifactId>junit</artifactId>
     <version>4.11</version>
     <scope>test</scope>
 </dependency>
-    
-  </dependencies>
+  </dependencies>  
+
 </project>
+
 
