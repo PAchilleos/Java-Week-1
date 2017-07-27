@@ -15,7 +15,7 @@ public class ShipTest {
 	@Test
 	public void testH() {
 		int c=test.getCounters();
-		ArrayList<Point>p = test.place(1,5,"Horizontal"); 
+		ArrayList<Point>p = test.place(1,5,"h"); 
 		System.out.println(p);
 		assertEquals(p.get(0).y,p.get(c-1).y); //if horizontal y position of start and end coordinates should be the same 
 		assertNotEquals(p.get(0).x,p.get(c-1).x); //x positions should be different
@@ -26,7 +26,7 @@ public class ShipTest {
 	@Test
 	public void testV() {
 		int c=test.getCounters();
-		ArrayList<Point>p = test.place(1,5,"Vertical"); 
+		ArrayList<Point>p = test.place(1,5,"v"); 
 		System.out.println(p);
 		assertEquals(c,p.size()); // check that number of counters created is equal to the number of counters specified in the Ship class
 		assertEquals(p.get(0).x,p.get(c-1).x); //if vertical x position of start and end coordinates should be the same 

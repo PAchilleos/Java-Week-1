@@ -53,13 +53,13 @@ public class Ship {
 		Point l1=  new Point(x,y);
 		ArrayList<Point> c = new  ArrayList<Point>(); //array list of counter start and end points  //make it include all counters in between
 		c.add(l1);
-		if(or.equals("Vertical")) {
+		if(or.equals("v")) {
 			for (int i=1;i<counters;i++) {		
 				Point l2 = new Point(x, y-i);				
 				c.add(l2);	
 			}
 		}
-		else if (or.equals("Horizontal")) {
+		else if (or.equals("h")) {
 			for (int i=1;i<counters;i++) {	
 				Point l2 = new Point(x+i,y);
 				c.add(l2);
